@@ -1,0 +1,136 @@
+ .container {
+            width: 80%;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .project-details {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        img {
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        .project-info {
+            max-width: 800px;
+        }
+
+        .project-info h2 {
+            margin: 0 0 10px 0;
+        }
+
+        .project-info p {
+            margin: 5px 0;
+        }
+
+        .project-info .resources,
+        .project-info .budget {
+            margin: 10px 0;
+        }
+
+        .back-link {
+            display: block;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .back-link a {
+            color: #5cb85c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* Styles for the update resources form */
+        .update-resources-form {
+            margin-top: 30px;
+        }
+
+        .update-resources-form h2 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .resource-item {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+
+        .resource-item div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .resource-item label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .resource-item input[type="text"],
+        .resource-item textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .resource-item textarea {
+            resize: vertical;
+            font-family: Arial, sans-serif;
+        }
+
+        .add-resource-btn {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+
+        .add-resource-btn:hover {
+            background-color: #4cae4c;
+        }
+
+        .delete-resource-btn {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        .delete-resource-btn:hover {
+            background-color: #c82333;
+        }

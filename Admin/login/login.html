@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication Page</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Registration Form -->
+<div id="register" class="form-container">
+    <h2>Register</h2>
+    <form id="registerForm" action="register_backend.php" method="POST">
+        <label for="regUsername">Username</label>
+        <input type="text" id="regUsername" name="username" required>
+        
+        <label for="regEmail">Email</label>
+        <input type="email" id="regEmail" name="email" required>
+        
+        <label for="regPassword">Password</label>
+        <input type="password" id="regPassword" name="password" required>
+        
+        <button type="submit">Register</button>
+        <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+    </form>
+</div>
+
+<!-- Login Form -->
+<div id="login" class="form-container hidden">
+    <h2>Admin Login</h2>
+    <form id="loginForm" action="login_backend.php" method="POST">
+        <label for="loginEmail">Email</label>
+        <input type="email" id="loginEmail" name="email" required>
+        
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" name="password" required>
+        
+        <button type="submit">Login</button>
+        <p>Forgot your password? <a href="#" onclick="showForgotPassword()">Reset Password</a></p>
+        <p>Don't have an account? <a href="#" onclick="showRegister()">Register</a></p>
+    </form>
+</div>
+
+<!-- Forgot Password Form -->
+<div id="forgotPassword" class="form-container hidden">
+    <h2>Reset Password</h2>
+    <form id="forgotPasswordForm" action="forgot_password.php" method="POST">
+        <label for="forgotEmail">Email</label>
+        <input type="email" id="forgotEmail" name="email" required>
+        
+        <button type="submit">Reset Password</button>
+        <p>Remembered your password? <a href="#" onclick="showLogin()">Login</a></p>
+    </form>
+</div>
+
+
+    <script src="js/login.js"></script>
+</body>
+</html>

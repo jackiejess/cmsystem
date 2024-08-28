@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.project:last-child {
+    border-bottom: none;
+}
+
+.project img {
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.project-details {
+    display: flex;
+    align-items: center;
+}
+
+.project-info {
+    max-width: 800px;
+}
+
+.project-info h2 {
+    margin: 0 0 10px 0;
+}
+
+.project-info p {
+    margin: 5px 0;
+}
+
+.project-info .resources,
+.project-info .budget {
+    margin: 10px 0;
+}
